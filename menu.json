@@ -1,0 +1,161 @@
+{
+  "categories": [
+    {
+      "id": "boba",
+      "name": "Boba",
+      "description": "Crafted with love and tapioca pearls",
+      "background": "boba",
+      "items": [
+        {
+          "name": "Thai Milk Tea Boba",
+          "price": "55",
+          "description": "Thai Milk Tea with chewy tapioca pearls"
+        },
+        {
+          "name": "Coffee Boba",
+          "price": "55",
+          "description": "All that Coffee you love with boba"
+        },
+        {
+          "name": "Choco Boba",
+          "price": "55",
+          "description": "Smooth chocolaty goodness"
+        },
+        {
+          "name": "Vanilla Boba",
+          "price": "55",
+          "description": "Never a bad choice"
+        },
+        {
+          "name": "Oreo Boba",
+          "price": "55",
+          "description": "Ever here the birds sing oooooooreeeeeeoooooo?"
+        },
+        {
+          "name": "Banana Boba",
+          "price": "55",
+          "description": "Banana oh nana"
+        },
+        {
+          "name": "Cookie Delight Boba",
+          "price": "55",
+          "description": "Cookie delight or Cooked Light"
+        }
+      ]
+    },
+    {
+      "id": "matcha",
+      "name": "Matcha",
+      "description": "No coffee, no problem",
+      "background": "matcha",
+      "items": [
+        {
+          "name": "Classic Matcha",
+          "price": "50",
+          "description": "we know you don't care for coffee"
+        },
+        {
+          "name": "Blueberry Matcha",
+          "price": "65",
+          "description": "makes you go bloooooobewrrreeee"
+        },
+        {
+          "name": "Strawberry Matcha",
+          "price": "65",
+          "description": "Strawberry Sweetness"
+        },
+        {
+          "name": "Oreo Matcha",
+          "price": "60",
+          "description": "Ever craved for something bitter sweet?"
+        },
+        {
+          "name": "Banana Matcha",
+          "price": "65",
+          "description": "Nana"
+        },
+        {
+          "name": "Vanilla Matcha",
+          "price": "55",
+          "description": "Just a Hint of Exitement"
+        }
+      ]
+    },
+    {
+      "id": "lunch",
+      "name": "Lunch",
+      "description": "Fresh and satisfying",
+      "background": "lunch",
+      "items": [
+        {
+          "name": "Club Sandwich",
+          "price": "11.50",
+          "description": "Triple decker with turkey & bacon"
+        },
+        {
+          "name": "Caesar Salad",
+          "price": "10.75",
+          "description": "Crisp romaine with parmesan"
+        },
+        {
+          "name": "Knox Burger",
+          "price": "13.50",
+          "description": "Signature beef burger with fries"
+        },
+        {
+          "name": "Chicken Wrap",
+          "price": "10.25",
+          "description": "Grilled chicken with fresh veggies"
+        },
+        {
+          "name": "Pasta Primavera",
+          "price": "12.50",
+          "description": "Fresh vegetables in garlic sauce"
+        },
+        {
+          "name": "Mediterranean Bowl",
+          "price": "11.75",
+          "description": "Falafel, hummus, and tahini"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Sweet indulgence",
+      "background": "desserts",
+      "items": [
+        {
+          "name": "Cheesecake",
+          "price": "6.50",
+          "description": "New York style with berry sauce"
+        },
+        {
+          "name": "Chocolate Cupcake",
+          "price": "4.25",
+          "description": "Rich chocolate with frosting"
+        },
+        {
+          "name": "Cookies",
+          "price": "2.75",
+          "description": "Assorted fresh baked cookies"
+        },
+        {
+          "name": "Apple Pie",
+          "price": "6.75",
+          "description": "Warm pie with vanilla ice cream"
+        },
+        {
+          "name": "Crème Brûlée",
+          "price": "7.25",
+          "description": "Classic French custard"
+        },
+        {
+          "name": "Artisan Donut",
+          "price": "3.50",
+          "description": "Gourmet flavored donut"
+        }
+      ]
+    }
+  ]
+}

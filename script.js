@@ -1,3 +1,58 @@
+// Load menu from JSON
+async function loadMenu() {
+    try {
+        const response = await fetch('menu.json');
+        const data = await response.json();
+        renderMenu(data.categories);
+    } catch (error) {
+        console.error('Error loading menu:', error);
+    }
+}
+
+// Render menu dynamically
+function renderMenu(categories) {
+    const menuSection = document.getElementById('menu');
+    menuSection.innerHTML = '';
+
+    categories.forEach(category => {
+        const categoryDiv = document.createElement('div');
+        categoryDiv.className = 'category-section';
+        categoryDiv.setAttribute('data-bg', category.background);
+
+        categoryDiv.innerHTML = `
+            <div class="category-header animate-on-scroll">
+                <h2>${category.name}</h2>
+                <p>${category.description}</p>
+            </div>
+            <ul class="menu-list">
+                ${category.items.map(item => `
+                    <li class="menu-item animate-on-scroll">
+                        <div class="item-header">
+                            <span class="price">${item.price}</span>
+                            <h3>${item.name}</h3>
+                        </div>
+                        <p>${item.description}</p>
+                    </li>
+                `).join('')}
+            </ul>
+        `;
+
+        menuSection.appendChild(categoryDiv);
+    });
+
+    // Re-initialize observers after content is loaded
+    initializeObservers();
+}
+
+// Initialize intersection observers
+function initializeObservers() {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll, .category-header, .menu-item');
+    animatedElements.forEach(el => observer.observe(el));
+
+    const categorySections = document.querySelectorAll('.category-section');
+    categorySections.forEach(section => observer.observe(section));
+}
+
 // Intersection Observer for scroll animations
 const observerOptions = {
     root: null,
@@ -19,13 +74,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all elements with animation classes
-const animatedElements = document.querySelectorAll('.animate-on-scroll, .category-header, .menu-item');
-animatedElements.forEach(el => observer.observe(el));
-
-// Observe category sections
-const categorySections = document.querySelectorAll('.category-section');
-categorySections.forEach(section => observer.observe(section));
+// Load menu on page load
+window.addEventListener('DOMContentLoaded', loadMenu);
 
 // Smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

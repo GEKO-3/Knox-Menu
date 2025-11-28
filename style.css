@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Iskoola Pota';
+    src: url('Iskoola Pota Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tan Nimbus';
+    src: url('tan-nimbus.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +19,18 @@
 }
 
 :root {
-    --primary-color: #8B4513;
-    --secondary-color: #D2691E;
-    --text-dark: #2c2c2c;
+    --primary-color: #D68993;
+    --secondary-color: #A25B66;
+    --accent-light: #F4C4CB;
+    --accent-dark: #8B4A54;
+    --text-dark: #515151;
     --text-light: #f5f5f5;
-    --bg-light: #faf8f5;
-    --shadow: rgba(0, 0, 0, 0.1);
+    --bg-light: #fdf9fa;
+    --shadow: rgba(214, 137, 147, 0.15);
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Iskoola Pota', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
@@ -23,7 +39,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #D68993 0%, #A25B66 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +69,14 @@ body {
     text-align: center;
     z-index: 1;
     color: white;
+}
+
+.hero-logo {
+    width: 400px;
+    max-width: 90vw;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 .hero-content h1 {
@@ -119,7 +143,7 @@ body {
     animation: fadeIn 1s ease-in;
 }
 
-.hero-content h1 { animation-delay: 0.2s; }
+.hero-content .hero-logo { animation-delay: 0.2s; }
 .hero-content p { animation-delay: 0.4s; }
 .hero-content .cta-button { animation-delay: 0.6s; }
 
@@ -146,20 +170,24 @@ body {
 }
 
 /* Background animations for different categories */
+.category-section[data-bg="boba"] {
+    background: linear-gradient(135deg, rgba(214, 137, 147, 0.08) 0%, rgba(162, 91, 102, 0.08) 100%);
+}
+
 .category-section[data-bg="coffee"] {
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.05) 0%, rgba(210, 105, 30, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(214, 137, 147, 0.08) 0%, rgba(162, 91, 102, 0.08) 100%);
 }
 
 .category-section[data-bg="breakfast"] {
-    background: linear-gradient(135deg, rgba(255, 193, 7, 0.05) 0%, rgba(255, 152, 0, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(244, 196, 203, 0.1) 0%, rgba(214, 137, 147, 0.1) 100%);
 }
 
 .category-section[data-bg="lunch"] {
-    background: linear-gradient(135deg, rgba(76, 175, 80, 0.05) 0%, rgba(139, 195, 74, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(162, 91, 102, 0.08) 0%, rgba(139, 74, 84, 0.08) 100%);
 }
 
 .category-section[data-bg="desserts"] {
-    background: linear-gradient(135deg, rgba(233, 30, 99, 0.05) 0%, rgba(156, 39, 176, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(214, 137, 147, 0.1) 0%, rgba(244, 196, 203, 0.1) 100%);
 }
 
 .category-section.active {
@@ -180,6 +208,7 @@ body {
 }
 
 .category-header h2 {
+    font-family: 'Tan Nimbus', serif;
     font-size: 3rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
@@ -227,8 +256,8 @@ body {
     opacity: 0;
     transform: translateX(-50px);
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .menu-item.visible {
@@ -241,28 +270,34 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
+.item-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
 .price {
-    min-width: 80px;
+    font-family: 'Tan Nimbus', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--secondary-color);
-    text-align: left;
     flex-shrink: 0;
 }
 
 .item-info {
     flex: 1;
-    text-align: left;
 }
 
 .menu-item h3 {
+    font-family: 'Iskoola Pota', serif;
     font-size: 1.4rem;
     color: var(--primary-color);
-    margin-bottom: 0.3rem;
+    margin: 0;
+    display: inline;
 }
 
 .menu-item p {
-    color: #666;
+    color: #999;
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.4;
@@ -274,6 +309,13 @@ body {
     color: var(--text-light);
     padding: 3rem 2rem;
     text-align: center;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1);
 }
 
 .footer-content h3 {
@@ -299,13 +341,23 @@ body {
     transform: translateY(0);
 }
 
-/* Stagger animation delays for menu items */
-.menu-item:nth-child(1).visible { transition-delay: 0.1s; }
-.menu-item:nth-child(2).visible { transition-delay: 0.2s; }
-.menu-item:nth-child(3).visible { transition-delay: 0.3s; }
-.menu-item:nth-child(4).visible { transition-delay: 0.4s; }
-.menu-item:nth-child(5).visible { transition-delay: 0.5s; }
-.menu-item:nth-child(6).visible { transition-delay: 0.6s; }
+/* Stagger animation delays for menu items - supports unlimited items */
+.menu-item:nth-child(1).visible { transition-delay: 0.05s; }
+.menu-item:nth-child(2).visible { transition-delay: 0.1s; }
+.menu-item:nth-child(3).visible { transition-delay: 0.15s; }
+.menu-item:nth-child(4).visible { transition-delay: 0.2s; }
+.menu-item:nth-child(5).visible { transition-delay: 0.25s; }
+.menu-item:nth-child(6).visible { transition-delay: 0.3s; }
+.menu-item:nth-child(7).visible { transition-delay: 0.35s; }
+.menu-item:nth-child(8).visible { transition-delay: 0.4s; }
+.menu-item:nth-child(9).visible { transition-delay: 0.45s; }
+.menu-item:nth-child(10).visible { transition-delay: 0.5s; }
+.menu-item:nth-child(11).visible { transition-delay: 0.55s; }
+.menu-item:nth-child(12).visible { transition-delay: 0.6s; }
+.menu-item:nth-child(13).visible { transition-delay: 0.65s; }
+.menu-item:nth-child(14).visible { transition-delay: 0.7s; }
+.menu-item:nth-child(15).visible { transition-delay: 0.75s; }
+.menu-item:nth-child(n+16).visible { transition-delay: 0.8s; }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -330,10 +382,9 @@ body {
         padding: 3rem 1rem;
     }
     
-    .menu-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
+    .item-header {
+        flex-direction: row;
+        align-items: baseline;
     }
     
     .price {
