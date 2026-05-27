@@ -95,12 +95,12 @@
         {
           "name": "Chocolate Milkshake",
           "price": "50",
-          "description": "Triple decker with turkey & bacon"
+          "description": "Rich and creamy chocolate milkshake"
         },
         {
           "name": "Strawberry Milkshake",
           "price": "50",
-          "description": "Crisp romaine with parmesan"
+          "description": "Fresh strawberry milkshake"
         },
         {
           "name": "Vanilla Milkshake",
@@ -110,12 +110,12 @@
         {
           "name": "Oreo Milkshake",
           "price": "50",
-          "description": "Grilled chicken with fresh veggies"
+          "description": "Creamy Oreo milkshake goodness"
         },
         {
           "name": "Cookie Delight Milkshake",
           "price": "50",
-          "description": "Fresh vegetables in garlic sauce"
+          "description": "Delightful cookie-filled milkshake"
         },
         {
           "name": "Butterscotch Milkshake",
@@ -135,7 +135,7 @@
         {
           "name": "Oreo Velvet Milkshake",
           "price": "50",
-          "description": "Creamy butterscotch flavor"
+          "description": "Velvety smooth Oreo milkshake"
         }
       ]
     },
@@ -158,32 +158,32 @@
         {
           "name": "Iced Mocha Latte",
           "price": "50",
-          "description": "Assorted fresh baked cookies"
+          "description": "Coffee and chocolate mocha latte"
         },
         {
           "name": "Iced Lavaza Latte",
           "price": "60",
-          "description": "Warm pie with vanilla ice cream"
+          "description": "Premium Lavaza espresso iced latte"
         },
         {
           "name": "Iced Caramel Latte",
           "price": "55",
-          "description": "Classic French custard"
+          "description": "Sweet and smooth caramel iced latte"
         },
         {
           "name": "Iced Americano",
           "price": "40",
-          "description": "Gourmet flavored donut"
+          "description": "Classic iced Americano coffee"
         },
         {
           "name": "Orange Espresso",
           "price": "50",
-          "description": "Classic French custard"
+          "description": "Citrus-infused orange espresso"
         },
         {
           "name": "Iced Vanilla Latte",
           "price": "45",
-          "description": "Classic French custard"
+          "description": "Smooth vanilla iced latte"
         }
       ]
     },
