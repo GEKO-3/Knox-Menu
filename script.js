@@ -3,10 +3,24 @@ async function loadMenu() {
     try {
         const response = await fetch('menu.json');
         const data = await response.json();
+        renderNavbar(data.categories);
         renderMenu(data.categories);
     } catch (error) {
         console.error('Error loading menu:', error);
     }
+}
+
+// Render category navigation bar
+function renderNavbar(categories) {
+    const navbarContent = document.querySelector('.navbar-content');
+    navbarContent.innerHTML = '';
+
+    categories.forEach(category => {
+        const link = document.createElement('a');
+        link.href = `#${category.id}`;
+        link.textContent = category.name;
+        navbarContent.appendChild(link);
+    });
 }
 
 // Render menu dynamically
@@ -17,12 +31,23 @@ function renderMenu(categories) {
     categories.forEach(category => {
         const categoryDiv = document.createElement('div');
         categoryDiv.className = 'category-section';
+        categoryDiv.id = category.id;
         categoryDiv.setAttribute('data-bg', category.background);
 
         categoryDiv.innerHTML = `
             <div class="category-header animate-on-scroll">
                 <h2>${category.name}</h2>
                 <p>${category.description}</p>
+                ${category.categoryAddons ? `
+                    <div class="category-addons">
+                        <span class="addons-label">Add-ons available:</span>
+                        <div class="category-addons-list">
+                            ${category.categoryAddons.map(addon => `
+                                <span class="addon-badge">${addon.name} +${addon.price}</span>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
             </div>
             <ul class="menu-list">
                 ${category.items.map(item => `
@@ -32,6 +57,16 @@ function renderMenu(categories) {
                             <h3>${item.name}</h3>
                         </div>
                         <p>${item.description}</p>
+                        ${item.variations ? `
+                            <div class="variations">
+                                ${item.variations.map(variation => `
+                                    <div class="variation-item">
+                                        <span class="variation-name">${variation.name}</span>
+                                        <span class="variation-price">${variation.price}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
                     </li>
                 `).join('')}
             </ul>
@@ -75,7 +110,29 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Load menu on page load
-window.addEventListener('DOMContentLoaded', loadMenu);
+window.addEventListener('DOMContentLoaded', () => {
+    loadMenu();
+    initHamburgerMenu();
+});
+
+// Initialize hamburger menu
+function initHamburgerMenu() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navbarContent = document.querySelector('.navbar-content');
+
+    hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('active');
+        navbarContent.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.navbar-content a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburgerBtn.classList.remove('active');
+            navbarContent.classList.remove('active');
+        });
+    });
+}
 
 // Smooth scroll for navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

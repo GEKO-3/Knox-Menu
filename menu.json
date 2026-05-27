@@ -8,37 +8,42 @@
       "items": [
         {
           "name": "Thai Milk Tea Boba",
-          "price": "55",
+          "price": "60",
           "description": "Thai Milk Tea with chewy tapioca pearls"
         },
         {
           "name": "Coffee Boba",
-          "price": "55",
+          "price": "60",
           "description": "All that Coffee you love with boba"
         },
         {
           "name": "Choco Boba",
-          "price": "55",
+          "price": "60",
           "description": "Smooth chocolaty goodness"
         },
         {
           "name": "Vanilla Boba",
-          "price": "55",
+          "price": "60",
           "description": "Never a bad choice"
         },
         {
           "name": "Oreo Boba",
-          "price": "55",
+          "price": "75",
           "description": "Ever here the birds sing oooooooreeeeeeoooooo?"
         },
         {
           "name": "Banana Boba",
-          "price": "55",
+          "price": "70",
           "description": "Banana oh nana"
         },
         {
           "name": "Cookie Delight Boba",
-          "price": "55",
+          "price": "65",
+          "description": "Cookie delight or Cooked Light"
+        },
+        {
+          "name": "Butterscotch Boba",
+          "price": "65",
           "description": "Cookie delight or Cooked Light"
         }
       ]
@@ -51,109 +56,327 @@
       "items": [
         {
           "name": "Classic Matcha",
-          "price": "50",
+          "price": "55",
           "description": "we know you don't care for coffee"
         },
         {
           "name": "Blueberry Matcha",
-          "price": "65",
+          "price": "70",
           "description": "makes you go bloooooobewrrreeee"
         },
         {
           "name": "Strawberry Matcha",
-          "price": "65",
+          "price": "70",
           "description": "Strawberry Sweetness"
         },
         {
           "name": "Oreo Matcha",
-          "price": "60",
+          "price": "65",
           "description": "Ever craved for something bitter sweet?"
         },
         {
           "name": "Banana Matcha",
-          "price": "65",
+          "price": "70",
           "description": "Nana"
         },
         {
           "name": "Vanilla Matcha",
-          "price": "55",
+          "price": "65",
           "description": "Just a Hint of Exitement"
         }
       ]
     },
     {
-      "id": "lunch",
-      "name": "Lunch",
-      "description": "Fresh and satisfying",
-      "background": "lunch",
+      "id": "milkshakes",
+      "name": "Milk Shakes",
+      "description": "Creamy and delicious",
+      "background": "milkshakes",
       "items": [
         {
-          "name": "Club Sandwich",
-          "price": "11.50",
+          "name": "Chocolate Milkshake",
+          "price": "50",
           "description": "Triple decker with turkey & bacon"
         },
         {
-          "name": "Caesar Salad",
-          "price": "10.75",
+          "name": "Strawberry Milkshake",
+          "price": "50",
           "description": "Crisp romaine with parmesan"
         },
         {
-          "name": "Knox Burger",
-          "price": "13.50",
-          "description": "Signature beef burger with fries"
+          "name": "Vanilla Milkshake",
+          "price": "50",
+          "description": "Classic vanilla flavor"
         },
         {
-          "name": "Chicken Wrap",
-          "price": "10.25",
+          "name": "Oreo Milkshake",
+          "price": "50",
           "description": "Grilled chicken with fresh veggies"
         },
         {
-          "name": "Pasta Primavera",
-          "price": "12.50",
+          "name": "Cookie Delight Milkshake",
+          "price": "50",
           "description": "Fresh vegetables in garlic sauce"
         },
         {
-          "name": "Mediterranean Bowl",
-          "price": "11.75",
-          "description": "Falafel, hummus, and tahini"
+          "name": "Butterscotch Milkshake",
+          "price": "50",
+          "description": "Creamy butterscotch flavor"
+        },
+        {
+          "name": "Blueberry Milkshake",
+          "price": "50",
+          "description": "Creamy blueberry flavor"
+        },
+        {
+          "name": "Strawberry Slush",
+          "price": "50",
+          "description": "Creamy strawberry flavor"
+        },
+        {
+          "name": "Oreo Velvet Milkshake",
+          "price": "50",
+          "description": "Creamy butterscotch flavor"
         }
       ]
     },
     {
-      "id": "desserts",
-      "name": "Desserts",
-      "description": "Sweet indulgence",
-      "background": "desserts",
+      "id": "ice coffee",
+      "name": "Ice Coffee",
+      "description": "Refreshing and cool",
+      "background": "ice_coffee",
       "items": [
         {
-          "name": "Cheesecake",
-          "price": "6.50",
-          "description": "New York style with berry sauce"
+          "name": "Iced Coffee",
+          "price": "45",
+          "description": "Nescafe Milk Iced Coffee"
         },
         {
-          "name": "Chocolate Cupcake",
-          "price": "4.25",
+          "name": "Iced Oreo Latte",
+          "price": "50",
           "description": "Rich chocolate with frosting"
         },
         {
-          "name": "Cookies",
-          "price": "2.75",
+          "name": "Iced Mocha Latte",
+          "price": "50",
           "description": "Assorted fresh baked cookies"
         },
         {
-          "name": "Apple Pie",
-          "price": "6.75",
+          "name": "Iced Lavaza Latte",
+          "price": "60",
           "description": "Warm pie with vanilla ice cream"
         },
         {
-          "name": "Crème Brûlée",
-          "price": "7.25",
+          "name": "Iced Caramel Latte",
+          "price": "55",
           "description": "Classic French custard"
         },
         {
-          "name": "Artisan Donut",
-          "price": "3.50",
+          "name": "Iced Americano",
+          "price": "40",
           "description": "Gourmet flavored donut"
+        },
+        {
+          "name": "Orange Espresso",
+          "price": "50",
+          "description": "Classic French custard"
+        },
+        {
+          "name": "Iced Vanilla Latte",
+          "price": "45",
+          "description": "Classic French custard"
+        }
+      ]
+    },
+    {
+      "id": "jugo",
+      "name": "Jugo",
+      "description": "Refreshing and cool",
+      "background": "jugo",
+        "categoryAddons": [
+    {"name": "Jelly", "price": "5"},
+    {"name": "Ice Cream", "price": "5"}
+  ],
+      "items": [
+        {
+          "name": "Vanilla",
+          "price": "25",
+          "description": "Smooth and creamy vanilla juice"
+        },
+        {
+          "name": "Blueberry",
+          "price": "25",
+          "description": "Fresh blueberry juice with natural sweetness"
+        },
+        {
+          "name": "Pineapple",
+          "price": "25",
+          "description": "Tropical pineapple goodness in a glass"
+        },
+        {
+          "name": "Champagne",
+          "price": "25",
+          "description": "Elegant champagne-inspired juice"
+        },
+        {
+          "name": "Espresso",
+          "price": "25",
+          "description": "Rich coffee juice with espresso flavor"
+        },
+        {
+          "name": "Cappuccino",
+          "price": "25",
+          "description": "Creamy cappuccino juice blend"
+        },
+        {
+          "name": "Coffee Vanilla",
+          "price": "25",
+          "description": "Perfect blend of coffee and vanilla smoothness"
+        }
+      ]
+    },
+    {
+      "id": "ice_cream",
+      "name": "Ice Cream",
+      "description": "Cold and delicious frozen treats",
+      "background": "ice_cream",
+      "items": [
+        {
+          "name": "Chocolate",
+          "price": "15",
+          "description": "Rich and creamy chocolate ice cream",
+          "variations": [
+            {"name": "Scoop", "price": "15"},
+            {"name": "Cone", "price": "20"}
+          ]
+        },
+        {
+          "name": "Vanilla",
+          "price": "15",
+          "description": "Classic smooth vanilla ice cream",
+          "variations": [
+            {"name": "Scoop", "price": "15"},
+            {"name": "Cone", "price": "20"}
+          ]
+        },
+        {
+          "name": "Strawberry",
+          "price": "15",
+          "description": "Fresh strawberry ice cream",
+          "variations": [
+            {"name": "Scoop", "price": "15"},
+            {"name": "Cone", "price": "20"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shaai",
+      "name": "Shaai",
+      "description": "Traditional aromatic tea blends",
+      "background": "shaai",
+      "categoryAddons": [
+        {"name": "Large", "price": "10"}
+      ],
+      "items": [
+        {
+          "name": "Lemon",
+          "price": "10",
+          "description": "Refreshing lemon shaai"
+        },
+        {
+          "name": "Masala",
+          "price": "10",
+          "description": "Aromatic spiced masala shaai"
+        },
+        {
+          "name": "Cardamom",
+          "price": "10",
+          "description": "Fragrant cardamom shaai"
+        },
+        {
+          "name": "Strawberry",
+          "price": "10",
+          "description": "Sweet strawberry shaai"
+        }
+      ]
+    },
+    {
+      "id": "mocktails",
+      "name": "Mocktails",
+      "description": "Refreshing alcohol-free cocktails",
+      "background": "mocktails",
+      "items": [
+        {
+          "name": "Virgin",
+          "price": "50",
+          "description": "Classic collection - Refreshing virgin mocktail",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
+        },
+        {
+          "name": "Bluelagoon",
+          "price": "50",
+          "description": "Classic collection - Tropical blue lagoon flavor",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
+        },
+        {
+          "name": "Passion Fruit",
+          "price": "50",
+          "description": "Classic collection - Exotic passion fruit blend",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
+        },
+        {
+          "name": "Mango Mix",
+          "price": "50",
+          "description": "Classic collection - Sweet mango fusion",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
+        },
+        {
+          "name": "Mix Berry",
+          "price": "50",
+          "description": "Classic collection - Mixed berry delight",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
+        },
+        {
+          "name": "Bliss",
+          "price": "50",
+          "description": "Italian Soda - Pure bliss in a glass",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
+        },
+        {
+          "name": "Extacy",
+          "price": "50",
+          "description": "Italian Soda - Ecstatic flavor explosion",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
+        },
+        {
+          "name": "Pearl",
+          "price": "50",
+          "description": "Italian Soda - Elegant pearl essence",
+          "variations": [
+            {"name": "Redbull", "price": "70"},
+            {"name": "Sprite", "price": "50"}
+          ]
         }
       ]
     }
